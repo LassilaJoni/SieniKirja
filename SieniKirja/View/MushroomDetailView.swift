@@ -15,12 +15,12 @@ struct MushroomDetailView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             // IMAGE
-            Image("cover-akansieni")
+            Image(mushroom.image)
                 .resizable()
                 .scaledToFit()
             
             // TITLE
-            Text("Akansieni")
+            Text(mushroom.name)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .multilineTextAlignment(.center)
@@ -34,22 +34,45 @@ struct MushroomDetailView: View {
             
             // LATIN NAME
             
-            Text("Chlorophyllum olivieri")
+            Text(mushroom.latinName)
                 .font(.headline)
                 .foregroundColor(.accentColor)
                 .padding(.horizontal)
+        
+            
+            // EDIBLE
+            Group {
+                MushroomEdibleView(edibleImage: "exclamationmark.circle", edibleText: "edible", mushroom: mushroom)
+            }
+            
             
             // GALLERY
             
             Group {
                 HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Kuvat luonnossa")
+                
+                InsetGalleryView(mushroom: mushroom)
             }
-            
-            // EDIBLE
+        
             
             // DESCRIPTION
+            Group {
+            HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
+            
+            Text(mushroom.description)
+                .multilineTextAlignment(.leading)
+
+            }
+            .padding(.horizontal)
+            
+            
             
             // LINK TO WIKIPEDIA
+            
+            Group {
+                HeadingView(headingImage: "book.circle", headingText: "Lue lisää")
+                ExternalWebLink(mushroom: mushroom)
+            }
             
         } //: SCROLLVIEW
     }

@@ -20,6 +20,9 @@
 		355E891428364D5B005D4ACE /* MushroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891328364D5B005D4ACE /* MushroomDetailView.swift */; };
 		355E891628364F4C005D4ACE /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891528364F4B005D4ACE /* HeadingView.swift */; };
 		355E891828365337005D4ACE /* MushroomListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891728365337005D4ACE /* MushroomListItemView.swift */; };
+		355E891A283659D7005D4ACE /* MushroomEdibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E8919283659D7005D4ACE /* MushroomEdibleView.swift */; };
+		355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891B28366707005D4ACE /* InsetGalleryView.swift */; };
+		355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891D28366A86005D4ACE /* ExternalWebLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		355E891328364D5B005D4ACE /* MushroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomDetailView.swift; sourceTree = "<group>"; };
 		355E891528364F4B005D4ACE /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		355E891728365337005D4ACE /* MushroomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListItemView.swift; sourceTree = "<group>"; };
+		355E8919283659D7005D4ACE /* MushroomEdibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomEdibleView.swift; sourceTree = "<group>"; };
+		355E891B28366707005D4ACE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
+		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				355E891328364D5B005D4ACE /* MushroomDetailView.swift */,
 				355E891528364F4B005D4ACE /* HeadingView.swift */,
 				355E891728365337005D4ACE /* MushroomListItemView.swift */,
+				355E8919283659D7005D4ACE /* MushroomEdibleView.swift */,
+				355E891B28366707005D4ACE /* InsetGalleryView.swift */,
+				355E891D28366A86005D4ACE /* ExternalWebLink.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,11 +218,14 @@
 				355E88F528363D30005D4ACE /* ContentView.swift in Sources */,
 				355E88F328363D30005D4ACE /* SieniKirjaApp.swift in Sources */,
 				355E891828365337005D4ACE /* MushroomListItemView.swift in Sources */,
+				355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */,
 				355E890D28363F5A005D4ACE /* CoverImageView.swift in Sources */,
 				355E890728363DF0005D4ACE /* CodableBundleExtension.swift in Sources */,
 				355E891428364D5B005D4ACE /* MushroomDetailView.swift in Sources */,
 				355E890928363ECF005D4ACE /* CoverImageModel.swift in Sources */,
+				355E891A283659D7005D4ACE /* MushroomEdibleView.swift in Sources */,
 				355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */,
+				355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */,
 				355E891628364F4C005D4ACE /* HeadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
