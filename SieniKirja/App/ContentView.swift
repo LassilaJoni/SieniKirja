@@ -20,6 +20,7 @@ struct ContentView: View {
                 CoverImageView()
                     .frame(height:300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            
                 
                 ForEach(mushrooms) { mushroom in
                     NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
@@ -28,7 +29,10 @@ struct ContentView: View {
                     
                 }
             }//: LIST
+            .listStyle(.plain)
+            .listRowSeparatorTint(.accentColor)
             .navigationBarTitle("Sienikirja", displayMode: .large)
+            .frame(width: UIScreen.main.bounds.width)
             
         } //: NAVIGATION
         

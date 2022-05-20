@@ -18,7 +18,7 @@ struct ExternalWebLink: View {
                 Spacer()
                 
                 Group {
-                    Image(systemName: "arrow.up.right.square")
+                    Image(systemName: "link")
                     Link(mushroom.name, destination: (URL(string: mushroom.link) ?? URL(string: "https://wikipedia.org"))!)
                 }
                 .foregroundColor(.accentColor)
@@ -34,5 +34,7 @@ struct ExternalWebLink_Previews: PreviewProvider {
     
     static var previews: some View {
         ExternalWebLink(mushroom: mushrooms[0])
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

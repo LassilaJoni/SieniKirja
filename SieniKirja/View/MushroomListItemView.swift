@@ -16,12 +16,13 @@ struct MushroomListItemView: View {
             Image(mushroom.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 140, height: 140)
+                .frame(width: 90, height: 90)
                 .clipShape(RoundedRectangle(cornerRadius: 14))
+                
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(mushroom.name)
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(.heavy)
                 .foregroundColor(.accentColor)
             
@@ -29,9 +30,10 @@ struct MushroomListItemView: View {
             Text(mushroom.latinName)
                 .font(.footnote)
                 .lineLimit(2)
-                .padding(.trailing)
+                .padding(.trailing, 8)
             } //: VSTACK
         } //: HSTACK
+      
     }
 }
 
@@ -41,6 +43,6 @@ struct MushroomListItemView_Previews: PreviewProvider {
     static var previews: some View {
         MushroomListItemView(mushroom: mushrooms[1])
             .previewLayout(.sizeThatFits)
-            .padding()
+            
     }
 }

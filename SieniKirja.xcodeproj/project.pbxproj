@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35155F2B28378077008143E7 /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35155F2A28378077008143E7 /* PinchZoomView.swift */; };
 		355E88F328363D30005D4ACE /* SieniKirjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E88F228363D30005D4ACE /* SieniKirjaApp.swift */; };
 		355E88F528363D30005D4ACE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E88F428363D30005D4ACE /* ContentView.swift */; };
 		355E88F728363D35005D4ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355E88F628363D35005D4ACE /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35155F2A28378077008143E7 /* PinchZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
 		355E88EF28363D30005D4ACE /* SieniKirja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SieniKirja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355E88F228363D30005D4ACE /* SieniKirjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SieniKirjaApp.swift; sourceTree = "<group>"; };
 		355E88F428363D30005D4ACE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				355E8919283659D7005D4ACE /* MushroomEdibleView.swift */,
 				355E891B28366707005D4ACE /* InsetGalleryView.swift */,
 				355E891D28366A86005D4ACE /* ExternalWebLink.swift */,
+				35155F2A28378077008143E7 /* PinchZoomView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35155F2B28378077008143E7 /* PinchZoomView.swift in Sources */,
 				355E88F528363D30005D4ACE /* ContentView.swift in Sources */,
 				355E88F328363D30005D4ACE /* SieniKirjaApp.swift in Sources */,
 				355E891828365337005D4ACE /* MushroomListItemView.swift in Sources */,
