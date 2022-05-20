@@ -12,20 +12,22 @@ struct MushroomDetailView: View {
     
     let mushroom: Mushroom
     
-    @State var lastScaleValue: CGFloat = 1.0
-    @State var scale: CGFloat = 1.0
+    @EnvironmentObject var favorites: Favorites
 
-    
     var body: some View {
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .center, spacing: 20) {
+                VStack(alignment: .center, spacing: 10) {
+                    
                 // IMAGE
-                    Image(mushroom.image)
-                        .resizable()
-                        .scaledToFit()
-                        .pinchToZoom()
+                 Image(mushroom.image)
+                   .resizable()
+                   .scaledToFit()
+                   //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
+                   .pinchToZoom()
+                   
+                    
+                    
                         
-                        //.scaleEffect(self.selected ? 2.5 : 1)
                     
                         
                 // TITLE
@@ -58,9 +60,10 @@ struct MushroomDetailView: View {
                 // GALLERY
                 
                 Group {
-                    HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Kuvat luonnossa")
+                    HeadingView(headingImage: "photo.on.rectangle", headingText: "Kuvat luonnossa")
                     
                     InsetGalleryView(mushroom: mushroom)
+                        
                 }
             
                 
@@ -82,14 +85,23 @@ struct MushroomDetailView: View {
                     HeadingView(headingImage: "book.circle", headingText: "Lue lisää")
                     ExternalWebLink(mushroom: mushroom)
                 }
+                    
+                    
                 
             }
-                
+                Button(favorites.contains(mushroom) ? "Poista suosikeista" : "Lisää suosikkeihin") {
+                    if favorites.contains(mushroom) {
+                        favorites.remove(mushroom)
+                    } else {
+                        favorites.add(mushroom)
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .padding()
             
                
-        } //: SCROLLVIEW
-        
-    }
+        } //: VSTACK
+    }//: SCROLL
     
 }
 
@@ -101,5 +113,7 @@ struct MushroomDetailView_Previews: PreviewProvider {
         NavigationView {
             MushroomDetailView(mushroom: mushrooms[0])
         }
+        .environmentObject(Favorites())
+        .previewDevice("iPhone 11 Pro")
     }
 }
