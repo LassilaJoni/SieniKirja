@@ -21,9 +21,6 @@ struct FavoriteListView: View {
                     if favorites.contains(mushroom) {
                         NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                             MushroomListItemView(mushroom: mushroom)
-                        Image(systemName: "heart.fill")
-                            .accessibilityLabel("Suosikeissa oleva sieni")
-                            .foregroundColor(.accentColor)
                     }
                 }
                 
@@ -35,7 +32,9 @@ struct FavoriteListView: View {
 }
 
 struct FavoriteListView_Previews: PreviewProvider {
+    static let mushrooms: [Mushroom] = Bundle.main.decode("mushrooms.json")
     static var previews: some View {
+        
         FavoriteListView()
             .environmentObject(Favorites())
     }

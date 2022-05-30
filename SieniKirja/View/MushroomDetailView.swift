@@ -24,10 +24,6 @@ struct MushroomDetailView: View {
                    .scaledToFit()
                    //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
                    .pinchToZoom()
-                   
-                    
-                    
-                        
                     
                         
                 // TITLE
