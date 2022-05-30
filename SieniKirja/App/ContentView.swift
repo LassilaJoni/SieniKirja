@@ -27,7 +27,7 @@ struct ContentView: View {
             
             
             List {
-                
+                //Cover image at the top of the screen. Maybe show favorited mushrooms?
                 /*CoverImageView()
                     .frame(height:300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))

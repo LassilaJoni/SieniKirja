@@ -13,19 +13,33 @@ struct ExternalWebLink: View {
     var body: some View {
         GroupBox {
             HStack {
-                Image(systemName: "globe")
-                Text("Wikipedia")
+                Image(systemName: "network")
+                Text("Wikipedia.fi")
                 Spacer()
                 
                 Group {
                     Image(systemName: "link")
                     Link(mushroom.name, destination: (URL(string: mushroom.link) ?? URL(string: "https://wikipedia.org"))!)
-                }
+                    
+                }//:GROUP
                 .foregroundColor(.accentColor)
-            }
+            }//:HSTACK
+            
         
             
         } //:BOX
+        GroupBox {
+            HStack {
+                Image(systemName: "network")
+                Text("Laji.fi")
+                Spacer()
+                Group {
+                    Image(systemName: "link")
+                    Link(mushroom.name, destination: (URL(string: mushroom.extraLink) ?? URL(string: "https://laji.fi"))!)
+                }//:GROUP
+                .foregroundColor(.accentColor)
+        } //:HSTACK
+        }//:BOX
     }
 }
 

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct MushroomListItemView: View {
     
@@ -13,7 +14,7 @@ struct MushroomListItemView: View {
     
     var body: some View {
         HStack {
-            Image(mushroom.image)
+                WebImage(url: URL(string: mushroom.image))
                 .resizable()
                 .scaledToFill()
                 .frame(width: 90, height: 90)

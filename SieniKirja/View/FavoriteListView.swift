@@ -21,6 +21,9 @@ struct FavoriteListView: View {
                     if favorites.contains(mushroom) {
                         NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                             MushroomListItemView(mushroom: mushroom)
+                        Image(systemName: "heart.fill")
+                            .accessibilityLabel("Suosikeissa oleva sieni")
+                            .foregroundColor(.accentColor)
                     }
                 }
                 

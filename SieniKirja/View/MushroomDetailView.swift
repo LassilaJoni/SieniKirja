@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct MushroomDetailView: View {
     
@@ -19,11 +20,12 @@ struct MushroomDetailView: View {
                 VStack(alignment: .center, spacing: 10) {
                     
                 // IMAGE
-                 Image(mushroom.image)
+                    WebImage(url: URL(string: mushroom.image))
                    .resizable()
                    .scaledToFit()
                    //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
                    .pinchToZoom()
+
                     
                         
                 // TITLE
@@ -49,7 +51,8 @@ struct MushroomDetailView: View {
                 
                 // EDIBLE
                 Group {
-                    MushroomEdibleView(edibleImage: "exclamationmark.circle", edibleText: "edible", mushroom: mushroom)
+                    //MushroomEdibleView(edibleImage: "exclamationmark.circle", edibleText: "edible", mushroom: mushroom)
+                
                 }
                 
                 
@@ -67,7 +70,18 @@ struct MushroomDetailView: View {
                 Group {
                 HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
                 
+                    
+                    
                 Text(mushroom.description)
+                    .multilineTextAlignment(.leading)
+                
+                    //TabView (Spreadiness, environemnt, observation count)
+                    InsetExtraInfoView(mushroom: mushroom)
+                    
+                    //List of the extra information (Spore, sporangia etc)
+                    
+                
+                Text(mushroom.extraInfo)
                     .multilineTextAlignment(.leading)
 
                 }
