@@ -13,6 +13,7 @@ struct MushroomListItemView: View {
     let mushroom: Mushroom
     
     var body: some View {
+        
         HStack {
                 WebImage(url: URL(string: mushroom.image))
                 .resizable()

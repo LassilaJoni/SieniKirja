@@ -385,10 +385,12 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.124283/P9100217.jpg",
-        "credit": "Jukka Vauras",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/87735896/medium.jpeg",
+        "credit": "",
         "gallery": [
-            "https://image.laji.fi/MM.124283/P9100217.jpg"
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/87735742/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/51427815/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/51427831/medium.jpeg"
         ]
     },
     {

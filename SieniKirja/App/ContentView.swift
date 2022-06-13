@@ -11,13 +11,11 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     
     @State private var searchText = ""
-    
+    @State private var isShowingFavoritesPage = false
     let mushrooms: [Mushroom] = Bundle.main.decode("mushrooms.json")
     @StateObject var favorites = Favorites()
     
     var body: some View {
- 
-            
         
        
         
@@ -38,12 +36,12 @@ struct ContentView: View {
                 ForEach(filteredMushrooms) { mushroom in
                     NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                         MushroomListItemView(mushroom: mushroom)
-                        if favorites.contains(mushroom) {
+                        /*if favorites.contains(mushroom) {
                             
                             Image(systemName: "heart.fill")
                                 .accessibilityLabel("Suosikeissa oleva sieni")
                                 .foregroundColor(.accentColor)
-                        }
+                        }*/
                     }
                     
                 }
@@ -51,12 +49,36 @@ struct ContentView: View {
                
                 
             }//: LIST
+
+            /*.toolbar {
+                
+               ToolbarItem(placement: .navigationBarLeading) {
+                   Button(action: {
+                               self.isShowingFavoritesPage.toggle()
+                           }) {
+                               Text("Show Detail")
+                           }.sheet(isPresented: $isShowingFavoritesPage) {
+                               FavoriteListView()
+                           }
+            }
+            }*/
+            .toolbar {
+                NavigationLink(destination: FavoriteListView()) {
+                    Image(systemName: "heart.fill")
+                        
+                }
+                
+            }
+                
+                
+                
+            
             .listStyle(.plain)
             .listRowSeparatorTint(.accentColor)
             .navigationTitle("Sienikirja")
             .frame(width: UIScreen.main.bounds.width)
             // Searchbar
-            .searchable(text: $searchText, prompt: "Search for a mushroom")
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search for a mushroom")
             
             
         

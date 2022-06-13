@@ -107,7 +107,7 @@ struct MushroomDetailView: View {
                     }
                         
                     }//:BOX
-                            
+                
                     if mushroom.sporangia != "null" && mushroom.sporangia != "Not found" {
                         GroupBox {
                                     VStack {
@@ -129,6 +129,7 @@ struct MushroomDetailView: View {
                 
                 
                 // LINK TO WEBSITES
+                    
                 
                 Group {
                     HeadingView(headingImage: "book.circle", headingText: "Lue lisää")

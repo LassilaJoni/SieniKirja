@@ -21,16 +21,27 @@ struct FavoriteListView: View {
                     if favorites.contains(mushroom) {
                         NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                             MushroomListItemView(mushroom: mushroom)
-                        Image(systemName: "heart.fill")
+                        /*Image(systemName: "heart.fill")
                             .accessibilityLabel("Suosikeissa oleva sieni")
-                            .foregroundColor(.accentColor)
+                            .foregroundColor(.accentColor)*/
                     }
                 }
                 
             }
             
             
-        } //: LIST
+        }//: LIST
+        .navigationBarTitleDisplayMode(.inline)
+               .toolbar {
+                   ToolbarItem(placement: .principal) {
+                       VStack {
+                           
+                           Text("Suosikeissa olevat sienet").font(.headline)
+
+                       }
+                       .foregroundColor(.accentColor)
+                   }
+               }
     }
 }
 
