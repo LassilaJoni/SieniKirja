@@ -8,11 +8,17 @@
 import Foundation
 
 class Favorites: ObservableObject {
+    let defaults = UserDefaults.standard
     public var mushrooms: Set<String>
-    public let saveKey = "Favorites"
     
     init() {
-        mushrooms = []
+        let decoder = JSONDecoder()
+                if let data = defaults.data(forKey: "Favorites") {
+                    let mushroomData = try? decoder.decode(Set<String>.self, from: data)
+                    self.mushrooms = mushroomData ?? []
+                } else {
+                    self.mushrooms = []
+                }
         
     }
     
@@ -33,7 +39,10 @@ class Favorites: ObservableObject {
     }
     
     func save() {
-        
+        let encoder = JSONEncoder()
+           if let encoded = try? encoder.encode(mushrooms)  {
+               defaults.set(encoded, forKey: "Favorites")
+           }
     }
     
 }
