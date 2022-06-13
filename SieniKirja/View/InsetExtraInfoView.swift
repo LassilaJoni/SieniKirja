@@ -16,11 +16,11 @@ struct InsetExtraInfoView: View {
         Group {
             HStack {
                 TabView {
-                    if !mushroom.spreadiness.contains("null") || !mushroom.spreadiness.contains("Not found") {
+                    if !mushroom.spreadiness.contains("Not found") {
                             GroupBox(label: Text("Levinneisyys")) {
                                 Text(mushroom.spreadiness)
                             }}
-                    if !mushroom.environment.contains("null") || !mushroom.environment.contains("Not found") {
+                    if !mushroom.environment.contains("Not found") {
                             GroupBox(label: Text("Elinympäristö")) {
                                 Text(mushroom.environment)
                             }}

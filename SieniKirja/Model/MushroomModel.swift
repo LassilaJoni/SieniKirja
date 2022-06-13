@@ -23,6 +23,7 @@ struct Mushroom: Codable, Identifiable {
     let heimo: String
     let suku: String
     let laji: String
+    let credit: String
     let image: String
     let gallery: [String]
 }

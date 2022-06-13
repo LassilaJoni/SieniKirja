@@ -25,7 +25,6 @@ struct MushroomDetailView: View {
                    .resizable()
                    .scaledToFit()
                    //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
-                   .pinchToZoom()
 
                     
                         
@@ -63,7 +62,7 @@ struct MushroomDetailView: View {
                     HeadingView(headingImage: "photo.on.rectangle", headingText: "Kuvat luonnossa")
                     
                     InsetGalleryView(mushroom: mushroom)
-                        
+                    
                 }
             
                 
@@ -90,7 +89,7 @@ struct MushroomDetailView: View {
                 }
                 .padding(.horizontal)
                     
-                    if !mushroom.spores.contains("null") || !mushroom.spores.contains("Not found"){
+                    if mushroom.spores != "null" && mushroom.spores != "Not found" {
                         GroupBox {
                                     VStack {
                                         HStack {
@@ -109,7 +108,7 @@ struct MushroomDetailView: View {
                         
                     }//:BOX
                             
-                    if !mushroom.spores.contains("null") || !mushroom.spores.contains("Not found"){
+                    if mushroom.sporangia != "null" && mushroom.sporangia != "Not found" {
                         GroupBox {
                                     VStack {
                                         HStack {
@@ -125,9 +124,8 @@ struct MushroomDetailView: View {
                                         Text(mushroom.sporangia)
                                     }//:VSTACK
                         }
-                    } else {
-                        /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
-                    }//:BOX
+                    }
+                    //:BOX
                 
                 
                 // LINK TO WEBSITES

@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct InsetGalleryView: View {
-    @State private var willMoveToNextScreen = false
+
     let mushroom: Mushroom
     
     var body: some View {

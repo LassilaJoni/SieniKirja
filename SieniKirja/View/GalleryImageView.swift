@@ -24,7 +24,9 @@ struct GalleryImageView: View {
                             .pinchToZoom()
                             .fixedSize()
                     } //: LOOP
+                       
                 } //: TABVIEW
+    
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         
                     .navigationBarTitleDisplayMode(.inline)
@@ -41,7 +43,9 @@ struct GalleryImageView: View {
                            }
     
         
-        
+        if mushroom.credit != "" {
+            Text("Kuvan © " + mushroom.credit)
+        }
     }
 }
 
@@ -50,9 +54,11 @@ struct GalleryImageView: View {
 struct GalleryImageView_Previews: PreviewProvider {
     static let mushrooms: [Mushroom] = Bundle.main.decode("mushrooms.json")
     static var previews: some View {
-        GalleryImageView(mushroom: mushrooms[0])
-            .previewLayout(.sizeThatFits)
-            .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro"))
-                        .previewDisplayName("iPhone 11 Pro")
+        Group {
+            GalleryImageView(mushroom: mushrooms[0])
+                .previewLayout(.sizeThatFits)
+                .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
+            .previewDisplayName("iPhone 11")
+        }
     }
 }

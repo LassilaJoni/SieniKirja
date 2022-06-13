@@ -153,10 +153,14 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Amanita_vaginata_qtl1.jpg/1280px-Amanita_vaginata_qtl1.jpg",
-        "credit": "https://commons.wikimedia.org/wiki/User:Quartl",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/80671414/medium.jpeg",
+        "credit": "Quartl",
         "gallery": [
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Amanita_vaginata_qtl1.jpg/1280px-Amanita_vaginata_qtl1.jpg"
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/80671650/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/80671544/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/39089119/medium.jpg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/39089122/medium.jpg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/39089108/medium.jpg"
         ]
     },
     {
@@ -216,11 +220,11 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.82289/orig_22157.jpg",
-        "credit": "Alpo Huhmarniemi",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/90284122/medium.jpeg",
+        "credit": "Nina Filippova",
         "gallery": [
-            "https://image.laji.fi/MM.1671070/pikkurousku_2.JPG",
-            "https://image.laji.fi/MM.1671069/harmaarousku_1.JPG"
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/156295912/medium.jpg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/156295917/medium.jpg"
         ]
     },
     {
