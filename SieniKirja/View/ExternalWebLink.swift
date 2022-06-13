@@ -19,7 +19,7 @@ struct ExternalWebLink: View {
                 
                 Group {
                     Image(systemName: "link")
-                    Link(mushroom.name, destination: (URL(string: mushroom.link) ?? URL(string: "https://wikipedia.org"))!)
+                    Link(mushroom.name, destination: (URL(string: mushroom.extraLink) ?? URL(string: "https://wikipedia.org"))!)
                     
                 }//:GROUP
                 .foregroundColor(.accentColor)
@@ -35,7 +35,7 @@ struct ExternalWebLink: View {
                 Spacer()
                 Group {
                     Image(systemName: "link")
-                    Link(mushroom.name, destination: (URL(string: mushroom.extraLink) ?? URL(string: "https://laji.fi"))!)
+                    Link(mushroom.name, destination: (URL(string: mushroom.link) ?? URL(string: "https://laji.fi"))!)
                 }//:GROUP
                 .foregroundColor(.accentColor)
         } //:HSTACK

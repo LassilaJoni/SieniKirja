@@ -16,6 +16,8 @@ struct ContentView: View {
     @StateObject var favorites = Favorites()
     
     var body: some View {
+ 
+            
         
        
         
@@ -73,8 +75,11 @@ struct ContentView: View {
             return mushrooms
         } else {
             return mushrooms.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+    
         }
+        
     }
+    
     
 }
 

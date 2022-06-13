@@ -24,15 +24,6 @@ struct MushroomEdibleView: View {
                 .scaledToFit()
                 .frame(width: 70, height: 70)
                 .foregroundColor(.red)
-            /* Make in the json for every poisonous mushroom some kind of text
-             If it's poisonous place a warning symbol
-             exclamationmark.circle.fill
-            if((mushroom.edible).contains("myrkyllinen")) {
-                Text("Joo")
-            } else {
-                Text("jaaha")
-            }
-             */
             Text(mushroom.edible)
                 .font(.title3)
                 .fontWeight(.bold)

@@ -13,22 +13,28 @@ struct InsetExtraInfoView: View {
     
     var body: some View {
 
+        Group {
+            HStack {
+                TabView {
+                    if !mushroom.spreadiness.contains("null") || !mushroom.spreadiness.contains("Not found") {
+                            GroupBox(label: Text("Levinneisyys")) {
+                                Text(mushroom.spreadiness)
+                            }}
+                    if !mushroom.environment.contains("null") || !mushroom.environment.contains("Not found") {
+                            GroupBox(label: Text("Elinympäristö")) {
+                                Text(mushroom.environment)
+                            }}
+                            GroupBox(label: Text("Havainnot Suomessa")) {
+                                Text("Suomessa yhteensä " + String(mushroom.observationCount) + " havaintoa")
+                        }
+                          
+                            }//:TAB
 
-            TabView {
-                    GroupBox(label: Text("Levinneisyys")) {
-                        Text(mushroom.spreadiness)
-                        }
-                    GroupBox(label: Text("Elinympäristö")) {
-                        Text(mushroom.environment)
-                        }
-                    GroupBox(label: Text("Havainnot Suomessa")) {
-                        Text("Suomessa yhteensä " + String(mushroom.observationCount) + " havaintoa")
-                        }
-                  
-                    }//:TAB
-
-            .tabViewStyle(PageTabViewStyle())
-            .frame(minHeight: 226, idealHeight: 168, maxHeight: 200)
+                    .tabViewStyle(PageTabViewStyle())
+                    .frame(minWidth: 150, idealWidth: 200, maxWidth: 600, minHeight: 150, idealHeight: 165, maxHeight: 100, alignment: .top)
+            }
+        }
+        
         }
     }
 
@@ -38,7 +44,7 @@ struct InsetExtraInfoView_Previews: PreviewProvider {
     static var previews: some View {
         InsetExtraInfoView(mushroom: mushrooms[0])
             .previewLayout(.sizeThatFits)
-            //.padding()
+            .padding()
 
     }
 }

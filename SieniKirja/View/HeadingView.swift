@@ -18,7 +18,7 @@ struct HeadingView: View {
                 .foregroundColor(.accentColor)
                 .imageScale(.large)
             Text(headingText)
-                .font(.title3)
+                .font(.title2)
                 .fontWeight(.heavy)
         }
         .padding(.vertical)

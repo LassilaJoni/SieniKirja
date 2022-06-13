@@ -13,6 +13,7 @@ struct MushroomDetailView: View {
     
     let mushroom: Mushroom
     
+    @StateObject var GalleryData = GalleryViewModel()
     @EnvironmentObject var favorites: Favorites
 
     var body: some View {
@@ -78,18 +79,58 @@ struct MushroomDetailView: View {
                     //TabView (Spreadiness, environemnt, observation count)
                     InsetExtraInfoView(mushroom: mushroom)
                     
-                    //List of the extra information (Spore, sporangia etc)
                     
-                
+                    //List of the extra information (Spore, sporangia etc)
+                  
+                        
+                    
                 Text(mushroom.extraInfo)
                     .multilineTextAlignment(.leading)
 
                 }
                 .padding(.horizontal)
+                    
+                    if !mushroom.spores.contains("null") || !mushroom.spores.contains("Not found"){
+                        GroupBox {
+                                    VStack {
+                                        HStack {
+                                            Text("Itiöt")
+                                                .font(.title)
+                                                .bold()
+                                            
+                                            Spacer()
+                                            Image(systemName: "leaf")
+                                        }//:HSTACK
+                                        
+                                        Divider()
+                                        Text(mushroom.spores)
+                                    }//:VSTACK
+                    }
+                        
+                    }//:BOX
+                            
+                    if !mushroom.spores.contains("null") || !mushroom.spores.contains("Not found"){
+                        GroupBox {
+                                    VStack {
+                                        HStack {
+                                            Text("Itiöemä")
+                                                .font(.title)
+                                                .bold()
+                                            
+                                            Spacer()
+                                            Image(systemName: "leaf")
+                                        }//:HSTACK
+                                        
+                                        Divider()
+                                        Text(mushroom.sporangia)
+                                    }//:VSTACK
+                        }
+                    } else {
+                        /*@START_MENU_TOKEN@*/EmptyView()/*@END_MENU_TOKEN@*/
+                    }//:BOX
                 
                 
-                
-                // LINK TO WIKIPEDIA
+                // LINK TO WEBSITES
                 
                 Group {
                     HeadingView(headingImage: "book.circle", headingText: "Lue lisää")
@@ -112,6 +153,7 @@ struct MushroomDetailView: View {
                
         } //: VSTACK
     }//: SCROLL
+    
     
 }
 

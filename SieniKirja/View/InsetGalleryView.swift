@@ -6,22 +6,33 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct InsetGalleryView: View {
-    
+    @State private var willMoveToNextScreen = false
     let mushroom: Mushroom
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
-            HStack {
-                ForEach(mushroom.gallery, id: \.self) { item in
-                    Image(item)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 200)
-                    .cornerRadius(15)
-                } //: LOOP
-            } //: HSTACK
+      
+                HStack {
+                    
+                    ForEach(mushroom.gallery, id: \.self) { item in
+                        NavigationLink(destination: GalleryImageView(mushroom: mushroom)) {
+                            WebImage(url: URL(string: item))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                            .cornerRadius(15)
+                        }
+                            
+                        
+                            
+                        
+                    } //: LOOP
+                    
+                } //: HSTACK
+                
         } //: SCROLLVIEW
     }
 }
