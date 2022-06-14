@@ -15,26 +15,27 @@ struct MushroomDetailView: View {
     
     @StateObject var GalleryData = GalleryViewModel()
     @EnvironmentObject var favorites: Favorites
-
+    
     var body: some View {
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .center, spacing: 10) {
-                    
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .center, spacing: 10) {
+                
                 // IMAGE
-                    WebImage(url: URL(string: mushroom.image))
-                   .resizable()
-                   .scaledToFit()
-                   //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
-
-                    
-                        
+                WebImage(url: URL(string: mushroom.image))
+                    .resizable()
+                    .scaledToFit()
+                //.frame(width: UIScreen.main.bounds.size.width * 1, height: UIScreen.main.bounds.size.height * 0.5)
+                
+                
+                
                 // TITLE
                 Text(mushroom.name)
-                    .font(.largeTitle)
+                    .font(.title)
                     .fontWeight(.heavy)
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 0)
                     .foregroundColor(.primary)
+                    .lineLimit(1)
                     .background(
                         Color.accentColor
                             .frame(height: 5)
@@ -47,13 +48,13 @@ struct MushroomDetailView: View {
                     .font(.headline)
                     .foregroundColor(.accentColor)
                     .padding(.horizontal)
-            
+                
                 
                 // EDIBLE
-                Group {
+                /*Group {
                     //MushroomEdibleView(edibleImage: "exclamationmark.circle", edibleText: "edible", mushroom: mushroom)
-                
-                }
+                    
+                }*/
                 
                 
                 // GALLERY
@@ -64,92 +65,95 @@ struct MushroomDetailView: View {
                     InsetGalleryView(mushroom: mushroom)
                     
                 }
-            
+                
                 
                 // DESCRIPTION
+
                 Group {
-                HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
+                    HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
                 
                     
                     
-                Text(mushroom.description)
-                    .multilineTextAlignment(.leading)
+                    
+                    Text(mushroom.description)
+                        .multilineTextAlignment(.leading)
+                        .font(.body)
                 
                     //TabView (Spreadiness, environemnt, observation count)
                     InsetExtraInfoView(mushroom: mushroom)
                     
-                    
                     //List of the extra information (Spore, sporangia etc)
-                  
-                        
-                    
-                Text(mushroom.extraInfo)
-                    .multilineTextAlignment(.leading)
-
+    
+                    Text(mushroom.extraInfo)
+                        .multilineTextAlignment(.leading)
+                        .font(.body)
                 }
                 .padding(.horizontal)
-                    
-                    if mushroom.spores != "null" && mushroom.spores != "Not found" {
-                        GroupBox {
-                                    VStack {
-                                        HStack {
-                                            Text("Itiöt")
-                                                .font(.title)
-                                                .bold()
-                                            
-                                            Spacer()
-                                            Image(systemName: "leaf")
-                                        }//:HSTACK
-                                        
-                                        Divider()
-                                        Text(mushroom.spores)
-                                    }//:VSTACK
-                    }
-                        
-                    }//:BOX
+     
                 
-                    if mushroom.sporangia != "null" && mushroom.sporangia != "Not found" {
-                        GroupBox {
-                                    VStack {
-                                        HStack {
-                                            Text("Itiöemä")
-                                                .font(.title)
-                                                .bold()
-                                            
-                                            Spacer()
-                                            Image(systemName: "leaf")
-                                        }//:HSTACK
-                                        
-                                        Divider()
-                                        Text(mushroom.sporangia)
-                                    }//:VSTACK
-                        }
+                if mushroom.spores != "null" && mushroom.spores != "Not found" {
+                    GroupBox {
+                        VStack {
+                            HStack {
+                                Text("Itiöt")
+                                    .font(.title)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(systemName: "leaf")
+                            }//:HSTACK
+                            
+                            Divider()
+                            Text(mushroom.spores)
+                        }//:VSTACK
                     }
-                    //:BOX
+                    .padding()
+                    
+                }//:BOX
+                
+                if mushroom.sporangia != "null" && mushroom.sporangia != "Not found" {
+                    GroupBox {
+                        VStack {
+                            HStack {
+                                Text("Itiöemä")
+                                    .font(.title)
+                                    .bold()
+                                
+                                Spacer()
+                                Image(systemName: "leaf")
+                            }//:HSTACK
+                            
+                            Divider()
+                            Text(mushroom.sporangia)
+                        }//:VSTACK
+                    }
+                    .padding()
+                }
+                //:BOX
                 
                 
                 // LINK TO WEBSITES
-                    
+                
                 
                 Group {
                     HeadingView(headingImage: "book.circle", headingText: "Lue lisää")
                     ExternalWebLink(mushroom: mushroom)
                 }
-                    
-                    
+                
+                
                 
             }
-                Button(favorites.contains(mushroom) ? "Poista suosikeista" : "Lisää suosikkeihin") {
-                    if favorites.contains(mushroom) {
-                        favorites.remove(mushroom)
-                    } else {
-                        favorites.add(mushroom)
-                    }
+            Button(favorites.contains(mushroom) ? "Poista suosikeista" : "Lisää suosikkeihin") {
+                if favorites.contains(mushroom) {
+                    favorites.remove(mushroom)
+                } else {
+                    favorites.add(mushroom)
                 }
-                .buttonStyle(.borderedProminent)
-                .padding()
+            }
+            .buttonStyle(.borderedProminent)
+            .padding()
             
-               
+            
         } //: VSTACK
     }//: SCROLL
     

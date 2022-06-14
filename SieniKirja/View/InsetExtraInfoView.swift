@@ -16,11 +16,11 @@ struct InsetExtraInfoView: View {
         Group {
             HStack {
                 TabView {
-                    if !mushroom.spreadiness.contains("Not found") {
+                    if mushroom.spreadiness != "Not found" && mushroom.spreadiness != "null" {
                             GroupBox(label: Text("Levinneisyys")) {
                                 Text(mushroom.spreadiness)
                             }}
-                    if !mushroom.environment.contains("Not found") {
+                    if mushroom.environment != "Not found" && mushroom.environment != "null" {
                             GroupBox(label: Text("Elinympäristö")) {
                                 Text(mushroom.environment)
                             }}
@@ -31,7 +31,7 @@ struct InsetExtraInfoView: View {
                             }//:TAB
 
                     .tabViewStyle(PageTabViewStyle())
-                    .frame(minWidth: 150, idealWidth: 200, maxWidth: 600, minHeight: 150, idealHeight: 165, maxHeight: 100, alignment: .top)
+                    .frame(minWidth: 150, idealWidth: 200, maxWidth: 600, minHeight: 150, idealHeight: 165, maxHeight: 200, alignment: .top)
             }
         }
         
