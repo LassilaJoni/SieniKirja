@@ -31,7 +31,7 @@ struct InsetExtraInfoView: View {
                             }//:TAB
 
                     .tabViewStyle(PageTabViewStyle())
-                    .frame(minWidth: 150, idealWidth: 200, maxWidth: 600, minHeight: 150, idealHeight: 165, maxHeight: 200, alignment: .top)
+                    .frame(minWidth: 150, idealWidth: 200, maxWidth: 600, minHeight: 150, idealHeight: 250, maxHeight: 600, alignment: .top)
             }
         }
         

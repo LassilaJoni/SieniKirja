@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SieniKirjaApp: App {
+    @AppStorage("FirstStart") var didLaunchBefore: Bool = true
     var body: some Scene {
+        
+        
         WindowGroup {
-            ContentView()
-        }
+
+                 ContentView()
+             
+           }
     }
 }

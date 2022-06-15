@@ -72,13 +72,12 @@ struct MushroomDetailView: View {
                 Group {
                     HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
                 
-                    
-                    
+            
                     
                     Text(mushroom.description)
                         .multilineTextAlignment(.leading)
                         .font(.body)
-                
+                        .lineSpacing(5)
                     //TabView (Spreadiness, environemnt, observation count)
                     InsetExtraInfoView(mushroom: mushroom)
                     
@@ -87,6 +86,7 @@ struct MushroomDetailView: View {
                     Text(mushroom.extraInfo)
                         .multilineTextAlignment(.leading)
                         .font(.body)
+                        .lineSpacing(5)
                 }
                 .padding(.horizontal)
      
@@ -100,7 +100,7 @@ struct MushroomDetailView: View {
                                     .bold()
                                 
                                 Spacer()
-                                Image(systemName: "leaf")
+                                Image(systemName: "leaf.circle")
                             }//:HSTACK
                             
                             Divider()
@@ -120,7 +120,7 @@ struct MushroomDetailView: View {
                                     .bold()
                                 
                                 Spacer()
-                                Image(systemName: "leaf")
+                                Image(systemName: "leaf.circle")
                             }//:HSTACK
                             
                             Divider()

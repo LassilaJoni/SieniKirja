@@ -30,8 +30,10 @@
 		355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891B28366707005D4ACE /* InsetGalleryView.swift */; };
 		355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891D28366A86005D4ACE /* ExternalWebLink.swift */; };
 		357918D52844D19E0007C71C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 357918D42844D19E0007C71C /* data.json */; };
-		357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357918D72844D46D0007C71C /* SDWebImageSwiftUI */; };
+		357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357918D72844D46D0007C71C /* SDWebImageSwiftUI */; settings = {ATTRIBUTES = (Required, ); }; };
 		35C8947F284A398700A4D4FC /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8947E284A398700A4D4FC /* GalleryViewModel.swift */; };
+		35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */; };
+		35CC5EFD2859D9FE00FA581A /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */; };
 		35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35D69284A429600B555FC /* GalleryImageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
 		357918D42844D19E0007C71C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		35C8947E284A398700A4D4FC /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		35CC5EF82859D67300FA581A /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../../Desktop/KCustomAlert-master/KAlert.framework"; sourceTree = "<group>"; };
+		35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */,
 				357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +86,7 @@
 			children = (
 				355E88F128363D30005D4ACE /* SieniKirja */,
 				355E88F028363D30005D4ACE /* Products */,
+				35CC5EF72859D67300FA581A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +147,7 @@
 				350F10DC28452ED600F2A2F4 /* InsetDetailsView.swift */,
 				35D35D69284A429600B555FC /* GalleryImageView.swift */,
 				351E7B6128577707001515CC /* InfoView.swift */,
+				35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +179,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		35CC5EF72859D67300FA581A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35CC5EF82859D67300FA581A /* KAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +205,7 @@
 			name = SieniKirja;
 			packageProductDependencies = (
 				357918D72844D46D0007C71C /* SDWebImageSwiftUI */,
+				35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */,
 			);
 			productName = SieniKirja;
 			productReference = 355E88EF28363D30005D4ACE /* SieniKirja.app */;
@@ -268,6 +284,7 @@
 				355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */,
 				35155F2F2837B09D008143E7 /* FavoriteListView.swift in Sources */,
 				35155F2D2837AAB5008143E7 /* Favorites.swift in Sources */,
+				35CC5EFD2859D9FE00FA581A /* TermsAndConditionsView.swift in Sources */,
 				35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */,
 				355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */,
 				355E891628364F4C005D4ACE /* HeadingView.swift in Sources */,
@@ -487,6 +504,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		357918D72844D46D0007C71C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 357918D62844D46D0007C71C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 357918D62844D46D0007C71C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
