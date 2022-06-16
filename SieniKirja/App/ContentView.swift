@@ -69,6 +69,7 @@ struct ContentView: View {
                 .frame(width: UIScreen.main.bounds.width)
                 // Searchbar
                 .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Etsi sieniä")
+                .disableAutocorrection(true)
                 
                 
                 
