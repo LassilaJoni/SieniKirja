@@ -56,7 +56,7 @@ struct ContentView: View {
                 .alert(isPresented: $alertShouldBeShown, content: {
                                 
                     Alert(title: Text("Kiitos sovelluksen lataamisesta"),
-                    message: Text("Kuvissa saattaa kestää hieman ladata sillä ne tulevat palvelimelta, mutta kun ne kerran on latautunut ei tarvitsee enään odottaa :) \nJos huomaat virheen niin otathan yhteyttä sähköpostilla support@nordicprograms.com"),
+                    message: Text("Kuvissa saattaa kestää hieman ladata sillä ne tulevat palvelimelta, mutta kun ne kerran on latautunut ei tarvitsee enään odottaa :) \nJos huomaat virheen niin otathan yhteyttä sähköpostilla app@nordicprograms.com"),
                     dismissButton: Alert.Button.default(
                     Text("Jatka"), action: {
                     UserDefaults.standard.set(true, forKey: "FirstStart")

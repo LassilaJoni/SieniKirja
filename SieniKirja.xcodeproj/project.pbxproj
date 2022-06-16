@@ -33,7 +33,6 @@
 		357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357918D72844D46D0007C71C /* SDWebImageSwiftUI */; settings = {ATTRIBUTES = (Required, ); }; };
 		35C8947F284A398700A4D4FC /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8947E284A398700A4D4FC /* GalleryViewModel.swift */; };
 		35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */; };
-		35CC5EFD2859D9FE00FA581A /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */; };
 		35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35D69284A429600B555FC /* GalleryImageView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		357918D42844D19E0007C71C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		35C8947E284A398700A4D4FC /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		35CC5EF82859D67300FA581A /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../../Desktop/KCustomAlert-master/KAlert.framework"; sourceTree = "<group>"; };
-		35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 				350F10DC28452ED600F2A2F4 /* InsetDetailsView.swift */,
 				35D35D69284A429600B555FC /* GalleryImageView.swift */,
 				351E7B6128577707001515CC /* InfoView.swift */,
-				35CC5EFC2859D9FE00FA581A /* TermsAndConditionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,7 +281,6 @@
 				355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */,
 				35155F2F2837B09D008143E7 /* FavoriteListView.swift in Sources */,
 				35155F2D2837AAB5008143E7 /* Favorites.swift in Sources */,
-				35CC5EFD2859D9FE00FA581A /* TermsAndConditionsView.swift in Sources */,
 				35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */,
 				355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */,
 				355E891628364F4C005D4ACE /* HeadingView.swift in Sources */,
@@ -446,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SieniKirja/Preview Content\"";
-				DEVELOPMENT_TEAM = 2ZR74WC3ZU;
+				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -460,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonilassila.SieniKirja;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nordicprograms.SieniKirja;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
