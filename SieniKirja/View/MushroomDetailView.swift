@@ -73,21 +73,23 @@ struct MushroomDetailView: View {
                     HeadingView(headingImage: "info.circle", headingText: "Lisätietoa")
                 
             
-                    
+                    if mushroom.description != "null" && mushroom.description != "Not found" {
                     Text(mushroom.description)
                         .multilineTextAlignment(.leading)
                         .font(.body)
                         .lineSpacing(5)
+                    }
                     //TabView (Spreadiness, environemnt, observation count)
                     InsetExtraInfoView(mushroom: mushroom)
                     
                     //List of the extra information (Spore, sporangia etc)
-    
+                    if mushroom.extraInfo != "null" && mushroom.extraInfo != "Not found" {
                     Text(mushroom.extraInfo)
                         .multilineTextAlignment(.leading)
                         .font(.body)
                         .lineSpacing(5)
                 }
+            }
                 .padding(.horizontal)
      
                 

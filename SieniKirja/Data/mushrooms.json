@@ -122,7 +122,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.72205/orig_14142.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/172016405/medium.jpg",
         "credit": "",
         "gallery": [
            "https://inaturalist-open-data.s3.amazonaws.com/photos/157186005/medium.jpeg?1631556740",
@@ -186,7 +186,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.71856/orig_21936.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/3835074/medium.jpg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/157362695/medium.jpeg?1631636996",
@@ -250,7 +250,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.77482/orig_13913.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/154693759/medium.jpeg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/154124315/medium.jpeg?1630325577",
@@ -317,7 +317,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.71947/orig_13988.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/85414822/medium.jpeg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/149668705/medium.jpeg",
@@ -571,16 +571,12 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://image.laji.fi/MM.71952/orig_13981.jpg",
-        "credit": "Seppo Huhmarniemi",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/87463320/medium.jpeg",
+        "credit": "Nina Filippova",
         "gallery": [
-            "https://image.laji.fi/MM.226211/Kangashapero_2.jpg",
-            "https://image.laji.fi/MM.226210/Kangashapero.jpg",
-            "https://image.laji.fi/MM.221223/WP_20180814_11_52_50_Rich.jpg",
-            "https://image.laji.fi/MM.224076/WP_20180824_13_54_04_Pro.jpg",
-            "https://image.laji.fi/MM.224077/WP_20180824_13_54_28_Pro.jpg",
-            "https://image.laji.fi/MM.224010/WP_20180824_08_01_11_Pro.jpg",
-            "https://image.laji.fi/MM.224011/WP_20180824_08_01_45_Pro.jpg"
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/87463314/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/87463320/medium.jpeg",
+            "https://inaturalist-open-data.s3.amazonaws.com/photos/87463322/medium.jpeg"
 
         ]
     },
