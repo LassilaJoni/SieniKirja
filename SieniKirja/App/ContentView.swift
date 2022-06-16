@@ -39,10 +39,12 @@ struct ContentView: View {
                         NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                             MushroomListItemView(mushroom: mushroom)
                             if favorites.contains(mushroom) {
-                                Image(systemName: "heart.fill")
-                                    .accessibilityLabel("Suosikeissa oleva sieni")
-                                    .foregroundColor(.accentColor)
-                                
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                                .accessibilityLabel("Suosikeissa oleva sieni")
+                                .foregroundColor(.accentColor)
+                                .padding(.leading)
                             }
                         }
                         
@@ -51,6 +53,16 @@ struct ContentView: View {
                     
                     
                 }//: LIST
+                .alert(isPresented: $alertShouldBeShown, content: {
+                                
+                    Alert(title: Text("Kiitos sovelluksen lataamisesta"),
+                    message: Text("Kuvissa saattaa kestää hieman ladata sillä ne tulevat palvelimelta, mutta kun ne kerran on latautunut ei tarvitsee enään odottaa :) \nJos huomaat virheen niin otathan yhteyttä sähköpostilla support@nordicprograms.com"),
+                    dismissButton: Alert.Button.default(
+                    Text("Jatka"), action: {
+                    UserDefaults.standard.set(true, forKey: "FirstStart")
+                    })
+                )
+                })
                 .toolbar {
                     NavigationLink(destination: FavoriteListView()) {
                         Image(systemName: "heart.fill")
@@ -73,12 +85,12 @@ struct ContentView: View {
                 
                 
                 
-            } //: NAVIGATION
+            } //: VSTACK
             
             
             
-        }
-        
+        }//: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
         .environmentObject(favorites)
     }
     

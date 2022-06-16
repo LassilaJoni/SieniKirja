@@ -19,10 +19,10 @@ struct GalleryImageView: View {
                     TabView {
                     ForEach(mushroom.gallery, id: \.self) { item in
                             WebImage(url: URL(string: item))
-                            .resizable(resizingMode: .tile)
-                            //.aspectRatio(contentMode: .fill)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .pinchToZoom()
-                            .fixedSize()
+                            
                     } //: LOOP
                        
                 } //: TABVIEW

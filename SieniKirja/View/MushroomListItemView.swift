@@ -10,11 +10,14 @@ import SDWebImageSwiftUI
 
 struct MushroomListItemView: View {
     
+    @StateObject var favorites = Favorites()
+    
     let mushroom: Mushroom
     
     var body: some View {
         
         HStack {
+            
                 WebImage(url: URL(string: mushroom.image))
                 .resizable()
                 .scaledToFill()
@@ -33,7 +36,11 @@ struct MushroomListItemView: View {
                 .font(.footnote)
                 .lineLimit(2)
                 .padding(.trailing, 8)
+                
             } //: VSTACK
+                
+                
+            
         } //: HSTACK
       
     }
