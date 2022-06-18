@@ -13,7 +13,7 @@ struct MushroomDetailView: View {
     
     let mushroom: Mushroom
     
-    @StateObject var GalleryData = GalleryViewModel()
+  
     @EnvironmentObject var favorites: Favorites
     
     var body: some View {

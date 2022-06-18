@@ -20,18 +20,14 @@
 		355E890528363DB8005D4ACE /* mushrooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 355E890428363DB8005D4ACE /* mushrooms.json */; };
 		355E890728363DF0005D4ACE /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E890628363DF0005D4ACE /* CodableBundleExtension.swift */; };
 		355E890928363ECF005D4ACE /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E890828363ECF005D4ACE /* CoverImageModel.swift */; };
-		355E890B28363F46005D4ACE /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 355E890A28363F46005D4ACE /* covers.json */; };
 		355E890D28363F5A005D4ACE /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E890C28363F5A005D4ACE /* CoverImageView.swift */; };
 		355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E890F283647FB005D4ACE /* MushroomModel.swift */; };
 		355E891428364D5B005D4ACE /* MushroomDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891328364D5B005D4ACE /* MushroomDetailView.swift */; };
 		355E891628364F4C005D4ACE /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891528364F4B005D4ACE /* HeadingView.swift */; };
 		355E891828365337005D4ACE /* MushroomListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891728365337005D4ACE /* MushroomListItemView.swift */; };
-		355E891A283659D7005D4ACE /* MushroomEdibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E8919283659D7005D4ACE /* MushroomEdibleView.swift */; };
 		355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891B28366707005D4ACE /* InsetGalleryView.swift */; };
 		355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891D28366A86005D4ACE /* ExternalWebLink.swift */; };
-		357918D52844D19E0007C71C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 357918D42844D19E0007C71C /* data.json */; };
 		357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357918D72844D46D0007C71C /* SDWebImageSwiftUI */; settings = {ATTRIBUTES = (Required, ); }; };
-		35C8947F284A398700A4D4FC /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8947E284A398700A4D4FC /* GalleryViewModel.swift */; };
 		35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */; };
 		35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35D69284A429600B555FC /* GalleryImageView.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +39,7 @@
 		35155F2C2837AAB5008143E7 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		35155F2E2837B09D008143E7 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
 		351E7B6128577707001515CC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		355E88EF28363D30005D4ACE /* SieniKirja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SieniKirja.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		355E88EF28363D30005D4ACE /* SieniOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SieniOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355E88F228363D30005D4ACE /* SieniKirjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SieniKirjaApp.swift; sourceTree = "<group>"; };
 		355E88F428363D30005D4ACE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		355E88F628363D35005D4ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,17 +47,13 @@
 		355E890428363DB8005D4ACE /* mushrooms.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mushrooms.json; sourceTree = "<group>"; };
 		355E890628363DF0005D4ACE /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		355E890828363ECF005D4ACE /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
-		355E890A28363F46005D4ACE /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
 		355E890C28363F5A005D4ACE /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		355E890F283647FB005D4ACE /* MushroomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomModel.swift; sourceTree = "<group>"; };
 		355E891328364D5B005D4ACE /* MushroomDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomDetailView.swift; sourceTree = "<group>"; };
 		355E891528364F4B005D4ACE /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		355E891728365337005D4ACE /* MushroomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListItemView.swift; sourceTree = "<group>"; };
-		355E8919283659D7005D4ACE /* MushroomEdibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomEdibleView.swift; sourceTree = "<group>"; };
 		355E891B28366707005D4ACE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
-		357918D42844D19E0007C71C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		35C8947E284A398700A4D4FC /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		35CC5EF82859D67300FA581A /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../../Desktop/KCustomAlert-master/KAlert.framework"; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +83,7 @@
 		355E88F028363D30005D4ACE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				355E88EF28363D30005D4ACE /* SieniKirja.app */,
+				355E88EF28363D30005D4ACE /* SieniOpus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,8 +113,6 @@
 		355E890028363D8C005D4ACE /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				357918D42844D19E0007C71C /* data.json */,
-				355E890A28363F46005D4ACE /* covers.json */,
 				355E890428363DB8005D4ACE /* mushrooms.json */,
 			);
 			path = Data;
@@ -135,7 +125,6 @@
 				355E891328364D5B005D4ACE /* MushroomDetailView.swift */,
 				355E891528364F4B005D4ACE /* HeadingView.swift */,
 				355E891728365337005D4ACE /* MushroomListItemView.swift */,
-				355E8919283659D7005D4ACE /* MushroomEdibleView.swift */,
 				355E891B28366707005D4ACE /* InsetGalleryView.swift */,
 				355E891D28366A86005D4ACE /* ExternalWebLink.swift */,
 				35155F2A28378077008143E7 /* PinchZoomView.swift */,
@@ -154,7 +143,6 @@
 			children = (
 				355E890828363ECF005D4ACE /* CoverImageModel.swift */,
 				355E890F283647FB005D4ACE /* MushroomModel.swift */,
-				35C8947E284A398700A4D4FC /* GalleryViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,7 +193,7 @@
 				35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */,
 			);
 			productName = SieniKirja;
-			productReference = 355E88EF28363D30005D4ACE /* SieniKirja.app */;
+			productReference = 355E88EF28363D30005D4ACE /* SieniOpus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -250,9 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				355E88FA28363D35005D4ACE /* Preview Assets.xcassets in Resources */,
-				355E890B28363F46005D4ACE /* covers.json in Resources */,
 				355E890528363DB8005D4ACE /* mushrooms.json in Resources */,
-				357918D52844D19E0007C71C /* data.json in Resources */,
 				355E88F728363D35005D4ACE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,13 +257,11 @@
 				355E88F328363D30005D4ACE /* SieniKirjaApp.swift in Sources */,
 				355E891828365337005D4ACE /* MushroomListItemView.swift in Sources */,
 				355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */,
-				35C8947F284A398700A4D4FC /* GalleryViewModel.swift in Sources */,
 				351E7B6228577708001515CC /* InfoView.swift in Sources */,
 				355E890D28363F5A005D4ACE /* CoverImageView.swift in Sources */,
 				355E890728363DF0005D4ACE /* CodableBundleExtension.swift in Sources */,
 				355E891428364D5B005D4ACE /* MushroomDetailView.swift in Sources */,
 				355E890928363ECF005D4ACE /* CoverImageModel.swift in Sources */,
-				355E891A283659D7005D4ACE /* MushroomEdibleView.swift in Sources */,
 				355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */,
 				35155F2F2837B09D008143E7 /* FavoriteListView.swift in Sources */,
 				35155F2D2837AAB5008143E7 /* Favorites.swift in Sources */,
@@ -421,13 +405,14 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonilassila.SieniKirja;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SieniOpus;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SieniKirja/Preview Content\"";
@@ -451,13 +437,15 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nordicprograms.SieniKirja;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = fi.nordicprograms.SieniKirja;
+				PRODUCT_NAME = SieniOpus;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
