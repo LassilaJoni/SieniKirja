@@ -21,6 +21,7 @@ struct InsetGalleryView: View {
                         NavigationLink(destination: GalleryImageView(mushroom: mushroom)) {
                             WebImage(url: URL(string: item))
                                 .resizable()
+                                .indicator(.activity)
                                 .scaledToFit()
                                 .frame(height: 200)
                             .cornerRadius(15)

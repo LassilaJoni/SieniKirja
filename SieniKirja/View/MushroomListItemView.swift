@@ -19,10 +19,13 @@ struct MushroomListItemView: View {
         HStack {
             
                 WebImage(url: URL(string: mushroom.image))
+            
                 .resizable()
+                .indicator(.activity)
                 .scaledToFill()
                 .frame(width: 90, height: 90)
                 .clipShape(RoundedRectangle(cornerRadius: 14))
+            
                 
             
             VStack(alignment: .leading, spacing: 5) {

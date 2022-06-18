@@ -20,6 +20,7 @@ struct GalleryImageView: View {
                     ForEach(mushroom.gallery, id: \.self) { item in
                             WebImage(url: URL(string: item))
                             .resizable()
+                            .indicator(.activity)
                             .aspectRatio(contentMode: .fit)
                             .pinchToZoom()
                             
