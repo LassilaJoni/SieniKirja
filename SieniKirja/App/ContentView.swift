@@ -23,11 +23,11 @@ struct ContentView: View {
         
         
         //MARK: - BODY
-   
         
-               
         
-       
+        
+        
+        
         
         NavigationView {
             
@@ -39,49 +39,62 @@ struct ContentView: View {
                         NavigationLink(destination: MushroomDetailView(mushroom: mushroom)) {
                             MushroomListItemView(mushroom: mushroom)
                             if favorites.contains(mushroom) {
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .frame(width: 15, height: 15)
-                                .accessibilityLabel("Suosikeissa oleva sieni")
-                                .foregroundColor(.accentColor)
-                                .padding(.leading)
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .frame(width: 15, height: 15)
+                                    .accessibilityLabel("Suosikeissa oleva sieni")
+                                    .foregroundColor(.accentColor)
+                                    .padding(.leading)
                             }
                         }
                         
                     }
                     
-                    
-                    
                 }//: LIST
                 .alert(isPresented: $alertShouldBeShown, content: {
-                                
+                    
                     Alert(title: Text("Kiitos sovelluksen lataamisesta"),
-                    message: Text("Kuvissa saattaa kestää hieman ladata sillä ne tulevat palvelimelta, mutta kun ne kerran on latautunut ei tarvitsee enään odottaa :) \nJos huomaat virheen niin otathan yhteyttä sähköpostilla app@nordicprograms.com"),
-                    dismissButton: Alert.Button.default(
-                    Text("Jatka"), action: {
-                    UserDefaults.standard.set(true, forKey: "FirstStart")
-                    })
-                )
+                          message: Text("Kuvissa saattaa kestää hieman ladata sillä ne tulevat palvelimelta, mutta kerran ladattua ei tarvitse enään odottaa 😊"),
+                          dismissButton: Alert.Button.default(
+                            Text("Jatka"), action: {
+                                UserDefaults.standard.set(true, forKey: "FirstStart")
+                            })
+                    )
                 })
+                .listStyle(.plain)
+                .listRowSeparatorTint(.accentColor)
+                .navigationTitle("Sienikirja")
+                .frame(width: UIScreen.main.bounds.width)
+                
+                // Searchbar
+                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Etsi sieniä")
+                .disableAutocorrection(true)
+                
+                
                 .toolbar {
-                    NavigationLink(destination: FavoriteListView()) {
-                        Image(systemName: "heart.fill")
+                    
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: FavoriteListView()) {
+                            Image(systemName: "heart.fill")
+                            
+                        }
                         
                     }
-                  
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        NavigationLink(destination: InfoView()) {
+                            Image(systemName: "info.circle.fill")
+                        }
+                    }
+                    //Tee toine group .navigationBarTrailing ja toinen .navigationBarLeading
+                    //trailing -> oikee
+                    //Leading -> Vasen
                     
                 }
                 
                 
                 
                 
-                .listStyle(.plain)
-                .listRowSeparatorTint(.accentColor)
-                .navigationTitle("Sienikirja")
-                .frame(width: UIScreen.main.bounds.width)
-                // Searchbar
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Etsi sieniä")
-                .disableAutocorrection(true)
+                
                 
                 
                 

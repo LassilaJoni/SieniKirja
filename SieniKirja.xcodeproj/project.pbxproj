@@ -54,7 +54,6 @@
 		355E891728365337005D4ACE /* MushroomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListItemView.swift; sourceTree = "<group>"; };
 		355E891B28366707005D4ACE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
-		35CC5EF82859D67300FA581A /* KAlert.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KAlert.framework; path = "../../Desktop/KCustomAlert-master/KAlert.framework"; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +166,6 @@
 		35CC5EF72859D67300FA581A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35CC5EF82859D67300FA581A /* KAlert.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
