@@ -28,6 +28,7 @@
 		355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891B28366707005D4ACE /* InsetGalleryView.swift */; };
 		355E891E28366A87005D4ACE /* ExternalWebLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E891D28366A86005D4ACE /* ExternalWebLink.swift */; };
 		357918D82844D46D0007C71C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 357918D72844D46D0007C71C /* SDWebImageSwiftUI */; settings = {ATTRIBUTES = (Required, ); }; };
+		35908321286B279E00AFDE62 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35908320286B279E00AFDE62 /* SettingsCell.swift */; };
 		35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */; };
 		35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35D69284A429600B555FC /* GalleryImageView.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,8 @@
 		355E891728365337005D4ACE /* MushroomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListItemView.swift; sourceTree = "<group>"; };
 		355E891B28366707005D4ACE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
+		3590831F286B230D00AFDE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		35908320286B279E00AFDE62 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +93,7 @@
 		355E88F128363D30005D4ACE /* SieniKirja */ = {
 			isa = PBXGroup;
 			children = (
+				3590831F286B230D00AFDE62 /* Info.plist */,
 				355E890328363D9F005D4ACE /* Extension */,
 				355E890228363D99005D4ACE /* Model */,
 				355E890128363D93005D4ACE /* View */,
@@ -133,6 +137,7 @@
 				350F10DC28452ED600F2A2F4 /* InsetDetailsView.swift */,
 				35D35D69284A429600B555FC /* GalleryImageView.swift */,
 				351E7B6128577707001515CC /* InfoView.swift */,
+				35908320286B279E00AFDE62 /* SettingsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,10 +216,10 @@
 			};
 			buildConfigurationList = 355E88EA28363D30005D4ACE /* Build configuration list for PBXProject "SieniKirja" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = fi;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				fi,
 				Base,
 			);
 			mainGroup = 355E88E628363D30005D4ACE;
@@ -264,6 +269,7 @@
 				35155F2F2837B09D008143E7 /* FavoriteListView.swift in Sources */,
 				35155F2D2837AAB5008143E7 /* Favorites.swift in Sources */,
 				35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */,
+				35908321286B279E00AFDE62 /* SettingsCell.swift in Sources */,
 				355E891C28366708005D4ACE /* InsetGalleryView.swift in Sources */,
 				355E891628364F4C005D4ACE /* HeadingView.swift in Sources */,
 			);
@@ -394,10 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SieniKirja/Preview Content\"";
-				DEVELOPMENT_TEAM = 2ZR74WC3ZU;
+				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SieniKirja/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -429,7 +435,7 @@
 				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SieniKirja/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
