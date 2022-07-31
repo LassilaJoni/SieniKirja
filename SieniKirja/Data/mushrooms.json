@@ -54,14 +54,14 @@
         "heimo": "null",
         "suku": "null",
         "laji": "null",
-        "image": "https://image.laji.fi/MM.84171/orig_13954.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/142666572/medium.jpeg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/142666721/medium.jpeg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/142666641/medium.jpeg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/142666468/medium.jpeg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/142666760/medium.jpeg",
-            "https://inaturalist-open-data.s3.amazonaws.com/photos/142666572/medium.jpeg"
+            "https://image.laji.fi/MM.84171/orig_13954.jpg"
 
         ]
     },

@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var isShowingFavoritesPage = false
     @State var alertShouldBeShown = !UserDefaults.standard.bool(forKey: "FirstStart")
     
+    
     @Environment(\.openURL) var openURL
     
     @State private var showingSheet = false
@@ -24,7 +25,6 @@ struct ContentView: View {
     @StateObject var favorites = Favorites()
     
     var body: some View {
-        
         
         
         //MARK: - BODY
@@ -56,6 +56,8 @@ struct ContentView: View {
                     }
                     
                 }//: LIST
+                .onAppear(perform: {requestReview()
+                })
                 .alert(isPresented: $alertShouldBeShown, content: {
                     
                     Alert(title: Text("Kiitos sovelluksen lataamisesta"),
@@ -133,49 +135,8 @@ struct ContentView_Previews: PreviewProvider {
     }
     
 }
-
-struct StoreReviewHelper {
     
-    static func incrementAppOpenedCount() { // called from appdelegate didfinishLaunchingWithOptions:
-        guard var appOpenCount = UserDefaults.standard.value(forKey: UserDefaultsKeys.APP_OPENED_COUNT) as? Int else {
-            UserDefaults.standard.set(1, forKey: UserDefaultsKeys.APP_OPENED_COUNT)
-            return
-        }
-        appOpenCount += 1
-        UserDefaults.standard.set(appOpenCount, forKey: UserDefaultsKeys.APP_OPENED_COUNT)
-    }
     
-    static func checkAndAskForReview() {
-        // Call this whenever appropriate.
-        // This will not be shown everytime. Apple has some internal logic on how to show this.
-        guard let appOpenCount = UserDefaults.standard.value(forKey: UserDefaultsKeys.APP_OPENED_COUNT) as? Int else {
-            UserDefaults.standard.set(1, forKey: UserDefaultsKeys.APP_OPENED_COUNT)
-            return
-        }
-        
-        switch appOpenCount {
-        case 10,50:
-            StoreReviewHelper().requestReview()
-        case _ where appOpenCount%100 == 0 :
-            StoreReviewHelper().requestReview()
-        default:
-            print("App run count is : \(appOpenCount)")
-            break;
-        }
-        
-    }
-    
-    func requestReview() {
-        if #available(iOS 14.0, *) {
-            if let scene = UIApplication.shared.currentScene {
-                SKStoreReviewController.requestReview(in: scene)
-            }
-        } else {
-            SKStoreReviewController.requestReview()
-        }
-    }
-}
-
 extension UIApplication {
     var currentScene: UIWindowScene? {
         connectedScenes
@@ -183,6 +144,24 @@ extension UIApplication {
     }
 }
 
-struct UserDefaultsKeys {
-    static let APP_OPENED_COUNT = "APP_OPENED_COUNT"
+
+func requestReview() {
+    var count = UserDefaults.standard.integer(forKey: UserDefaultKeys.appStartUpsCountKey)
+    count += 1
+    print("App launch count")
+    UserDefaults.standard.set(count, forKey: UserDefaultKeys.appStartUpsCountKey)
+    
+    let infoDictionaryKey = kCFBundleVersionKey as String
+    guard let currentVersion = Bundle.main.object(forInfoDictionaryKey: infoDictionaryKey) as? String
+        else { fatalError("Expected to find a bundle version in the info dictionary") }
+
+    let lastVersionPromptedForReview = UserDefaults.standard.string(forKey: UserDefaultKeys.lastVersionPromptedForReviewKey)
+    
+    if count >= 3 && currentVersion != lastVersionPromptedForReview {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.0) {
+            if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
+    }
 }

@@ -31,6 +31,7 @@
 		35908321286B279E00AFDE62 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35908320286B279E00AFDE62 /* SettingsCell.swift */; };
 		35CC5EF02858A64100FA581A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35CC5EEF2858A64100FA581A /* SDWebImageSwiftUI */; };
 		35D35D6A284A429600B555FC /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D35D69284A429600B555FC /* GalleryImageView.swift */; };
+		35DD57672896A7E3001EB955 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD57662896A7E3001EB955 /* UserDefaultsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3590831F286B230D00AFDE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		35908320286B279E00AFDE62 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
+		35DD57662896A7E3001EB955 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				355E88F228363D30005D4ACE /* SieniKirjaApp.swift */,
 				355E88F428363D30005D4ACE /* ContentView.swift */,
+				35DD57662896A7E3001EB955 /* UserDefaultsKeys.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				355E890728363DF0005D4ACE /* CodableBundleExtension.swift in Sources */,
 				355E891428364D5B005D4ACE /* MushroomDetailView.swift in Sources */,
 				355E890928363ECF005D4ACE /* CoverImageModel.swift in Sources */,
+				35DD57672896A7E3001EB955 /* UserDefaultsKeys.swift in Sources */,
 				355E8910283647FB005D4ACE /* MushroomModel.swift in Sources */,
 				35155F2F2837B09D008143E7 /* FavoriteListView.swift in Sources */,
 				35155F2D2837AAB5008143E7 /* Favorites.swift in Sources */,

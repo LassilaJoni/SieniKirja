@@ -59,8 +59,8 @@ struct InfoView: View {
                                         .foregroundColor(.secondary)
                                 )
                         })
-                        .buttonStyle(PlainButtonStyle()) // This gives it no designs on idle, but can change on input
-                        .accessibilityLabel(Text("Close")) // Keep it accessible
+                        .buttonStyle(PlainButtonStyle())
+                        .accessibilityLabel(Text("Close"))
                     }
                 }
                 
