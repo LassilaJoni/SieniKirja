@@ -1,4 +1,4 @@
-A mushroom guide containing over 160 species located in Finland. Features include: a lot of information about each mushroom and ability to add to favorites 
+A mushroom guide containing over 160 species located in Finland. Features include: a lot of information about each mushroom and ability to add to favorites. Currently only available in finnish.
 
 ![sieniopus-1](https://github.com/user-attachments/assets/8b6c7e36-38fa-492d-8b3f-629c4a1a708d)
 ![sieniopus-2](https://github.com/user-attachments/assets/a1374b0d-7dd6-4b53-b7fd-55ac6fbb7488)
