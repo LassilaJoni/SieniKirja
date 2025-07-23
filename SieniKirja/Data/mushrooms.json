@@ -1080,7 +1080,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/102731264/medium.jpeg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/46171656/medium.jpeg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/26008276/medium.jpeg",
@@ -1112,7 +1112,7 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/55359826/medium.jpeg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/26008276/medium.jpeg",
         "credit": "",
         "gallery": [
             "https://inaturalist-open-data.s3.amazonaws.com/photos/26008276/medium.jpeg",
@@ -2320,11 +2320,11 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/6105391/medium.jpg",
-        "credit": "",
+        "image": "https://image.laji.fi/MM.1562753/IMG_6582.jpg",
+        "credit": "Jukka Vauras",
         "gallery": [
-            "https://static.inaturalist.org/photos/6105387/medium.jpg",
-            "https://static.inaturalist.org/photos/6105503/medium.jpg"
+            "https://image.laji.fi/MM.1562752/IMG_6580.jpg",
+            "https://image.laji.fi/MM.249105/mannynlepparousku_Syndal.jpg"
         ]
     },
     {
@@ -2350,14 +2350,10 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/109428559/medium.jpg",
-        "credit": "aarongunnar, Christine",
+        "image": "https://image.laji.fi/MM.1548568/20200725_123013.jpg",
+        "credit": "Tyyra Juka",
         "gallery": [
-            "https://static.inaturalist.org/photos/109428655/medium.jpg",
-            "https://static.inaturalist.org/photos/109428638/medium.jpg",
-            "https://inaturalist-open-data.s3.amazonaws.com/photos/49741719/medium.jpg",
-            "https://inaturalist-open-data.s3.amazonaws.com/photos/49741712/medium.jpg",
-            "https://inaturalist-open-data.s3.amazonaws.com/photos/49741728/medium.jpg"
+            "https://image.laji.fi/MM.1548567/20200725_123020.jpg"
         ]
     },
     {
@@ -3457,11 +3453,10 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/6549357/medium.jpg",
-        "credit": "",
+        "image": "https://image.laji.fi/MM.146504/DSC04377.jpg",
+        "credit": "Matleena Pulkkinen",
         "gallery": [
-            "https://static.inaturalist.org/photos/6549356/medium.jpg",
-            "https://static.inaturalist.org/photos/6549353/medium.jpg",
+            "https://image.laji.fi/MM.146505/DSC04373.jpg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/162065067/medium.jpeg"
         ]
     },
@@ -3551,14 +3546,11 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/100261789/medium.jpeg",
-        "credit": "E. A, Ruslan Sadykov",
+        "image": "https://image.laji.fi/MM.345220/IMG_20190921_103223.jpg",
+        "credit": "A. Kujala",
         "gallery": [
-            "https://static.inaturalist.org/photos/100261630/medium.jpeg",
-            "https://static.inaturalist.org/photos/100261728/medium.jpeg",
-            "https://static.inaturalist.org/photos/100261789/medium.jpeg",
-            "https://static.inaturalist.org/photos/92516002/medium.jpeg",
-            "https://static.inaturalist.org/photos/92516023/medium.jpeg"
+            "https://image.laji.fi/MM.345221/IMG_20190921_103249.jpg",
+            "https://image.laji.fi/MM.345223/IMG_20190921_111504.jpg"
         ]
     },
     {
@@ -4285,11 +4277,9 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/41645086/medium.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/57669583/medium.jpg",
         "credit": "",
         "gallery": [
-            "https://static.inaturalist.org/photos/41645090/medium.jpg",
-            "https://static.inaturalist.org/photos/41645092/medium.jpg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/57669605/medium.jpg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/57669583/medium.jpg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/57669625/medium.jpg",
@@ -4627,12 +4617,9 @@
         "heimo": "",
         "suku": "",
         "laji": "",
-        "image": "https://static.inaturalist.org/photos/54152912/medium.jpg",
+        "image": "https://inaturalist-open-data.s3.amazonaws.com/photos/101873233/medium.jpeg",
         "credit": "",
         "gallery": [
-            "https://static.inaturalist.org/photos/54152909/medium.jpg",
-            "https://static.inaturalist.org/photos/54152910/medium.jpg",
-            "https://static.inaturalist.org/photos/54152914/medium.jpg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/101873233/medium.jpeg",
             "https://inaturalist-open-data.s3.amazonaws.com/photos/101873246/medium.jpeg"
         ]

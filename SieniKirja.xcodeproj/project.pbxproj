@@ -56,7 +56,6 @@
 		355E891728365337005D4ACE /* MushroomListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomListItemView.swift; sourceTree = "<group>"; };
 		355E891B28366707005D4ACE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		355E891D28366A86005D4ACE /* ExternalWebLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLink.swift; sourceTree = "<group>"; };
-		3590831F286B230D00AFDE62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		35908320286B279E00AFDE62 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		35D35D69284A429600B555FC /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 		35DD57662896A7E3001EB955 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
@@ -95,7 +94,6 @@
 		355E88F128363D30005D4ACE /* SieniKirja */ = {
 			isa = PBXGroup;
 			children = (
-				3590831F286B230D00AFDE62 /* Info.plist */,
 				355E890328363D9F005D4ACE /* Extension */,
 				355E890228363D99005D4ACE /* Model */,
 				355E890128363D93005D4ACE /* View */,
@@ -407,7 +405,8 @@
 				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SieniKirja/Info.plist;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -418,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jonilassila.SieniKirja;
 				PRODUCT_NAME = SieniOpus;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -439,7 +438,8 @@
 				DEVELOPMENT_TEAM = GATBYX743P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SieniKirja/Info.plist;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -450,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = fi.nordicprograms.SieniKirja;
 				PRODUCT_NAME = SieniOpus;
 				PROVISIONING_PROFILE_SPECIFIER = "";

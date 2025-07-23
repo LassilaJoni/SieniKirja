@@ -56,8 +56,6 @@ struct ContentView: View {
                     }
                     
                 }//: LIST
-                .onAppear(perform: {requestReview()
-                })
                 .alert(isPresented: $alertShouldBeShown, content: {
                     
                     Alert(title: Text("Kiitos sovelluksen lataamisesta"),
